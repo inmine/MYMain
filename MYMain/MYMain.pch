@@ -1,0 +1,47 @@
+//
+//  MYMain.pch
+//  MYMain
+//
+//  Created by admin on 16/6/22.
+//  Copyright © 2016年 XiChuan. All rights reserved.
+//
+
+#ifdef __OBJC__  // 环信SDK集成开始
+
+#ifndef MYMain_pch
+#define MYMain_pch
+#import <UIKit/UIKit.h>
+//#import <Foundation/Foundation.h>
+
+/***************************************/
+/** 环信 */
+//#import "EMSDK.h"  // 环信SDK
+#import "EaseUI.h"  // 环信UI
+#import "EMSDKFull.h" // 环信实时通讯(音频视频)
+//#import "Redpacket.h"  // 红包
+#import "ChatDemoHelper.h"
+/***************************************/
+/** 类别 */
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+
+/***************************************/
+/** 第三方资源 */
+#import "SDCycleScrollView.h" // 图片滚动
+#import "Masonry.h"  // 约束
+#import "MBProgressHUD.h"
+
+
+/***************************************/
+/** 自定义宏 */
+#define WIDTH CGRectGetWidth(self.view.bounds)
+#define HEIGHT CGRectGetHeight(self.view.bounds)
+#define MYLog(...) NSLog(__VA_ARGS__)
+#define MYColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define MYRandomColor [UIColor colorWithRed:(arc4random_uniform(255))/255.0 green:(arc4random_uniform(255))/255.0 blue:(arc4random_uniform(255))/255.0 alpha:1.0]
+
+#define DEMO_CALL 1
+
+#endif /* MYMain_pch */
+
+#endif  // 环信SDK集成结束
