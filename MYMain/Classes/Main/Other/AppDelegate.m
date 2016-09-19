@@ -26,7 +26,7 @@
     self.window.frame = [UIScreen mainScreen].bounds;
     self.window.backgroundColor = [UIColor whiteColor];
     
-    // 2,设置根控制器
+    // 2,设置根控制器main
     NSString *key = @"CFBundleVersion";
     
     // 上次版本号
